@@ -138,7 +138,7 @@ public class ZeroconfModule extends ReactContextBaseJavaModule {
             service.putString(KEY_SERVICE_FULL_NAME, serviceInfo.getHost().getHostName() + serviceInfo.getServiceType());
             service.putString(KEY_SERVICE_HOST, serviceInfo.getHost().getHostName());
             service.putInt(KEY_SERVICE_PORT, serviceInfo.getPort());
-
+/*
             WritableMap txtRecords = new WritableNativeMap();
 
             Map<String, byte[]> attributes = serviceInfo.getAttributes();
@@ -153,7 +153,7 @@ public class ZeroconfModule extends ReactContextBaseJavaModule {
             }
 
             service.putMap(KEY_SERVICE_TXT, txtRecords);
-
+*/
             WritableArray addresses = new WritableNativeArray();
             addresses.pushString(serviceInfo.getHost().getHostAddress());
 

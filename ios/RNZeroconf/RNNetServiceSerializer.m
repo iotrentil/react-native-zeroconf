@@ -31,7 +31,7 @@ const NSString *kRNServiceTxtRecords = @"txt";
         serviceInfo[kRNServiceKeysPort] = @(service.port);
         
         NSDictionary<NSString *, NSData *> *txtRecordDict = [NSNetService dictionaryFromTXTRecordData:service.TXTRecordData];
-        
+/*        
         NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
         for (NSString *key in txtRecordDict) {
             dict[key] = [[NSString alloc]
@@ -39,6 +39,7 @@ const NSString *kRNServiceTxtRecords = @"txt";
                           encoding:NSASCIIStringEncoding];
         }
         serviceInfo[kRNServiceTxtRecords] = dict;
+*/
     }
 
     return [NSDictionary dictionaryWithDictionary:serviceInfo];
